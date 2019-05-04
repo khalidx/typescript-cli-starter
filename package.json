@@ -1,0 +1,19 @@
+{
+  "name": "resource-x",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Khalid Zoabi <kzoabi@outlook.com>",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "bin": "./dist/cli.js",
+  "scripts": {
+    "dev": "ts-node ./src/index.ts",
+    "build": "tsc",
+    "bundle": "npm run build && pkg . --out-dir ./exec/"
+  },
+  "devDependencies": {
+    "pkg": "^4.3.8",
+    "typescript": "^3.4.5"
+  }
+}
