@@ -1,3 +1,7 @@
+# Ignore generated directories
+dist/
+exec/
+
 # Logs
 logs
 *.log
