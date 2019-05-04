@@ -1,9 +1,13 @@
 {
-  "name": "resource-x",
+  "name": "typescript-cli-starter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple and zero-opinion typescript starter template for building cross-platform command line applications.",
   "author": "Khalid Zoabi <kzoabi@outlook.com>",
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "cli",
+    "starter"
+  ],
   "license": "MIT",
   "main": "./dist/index.js",
   "bin": "./dist/cli.js",
