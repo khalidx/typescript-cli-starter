@@ -12,6 +12,10 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "bin": "./dist/cli.js",
+  "files": [
+    "dist/**/*",
+    "!dist/**/*.test.js"
+  ],
   "scripts": {
     "dev": "ts-node ./src/cli.ts",
     "clean": "rimraf ./dist/ ./exec/",
