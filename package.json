@@ -20,6 +20,7 @@
     "bundle": "npm run build && pkg . --out-dir ./exec/"
   },
   "devDependencies": {
+    "ava": "^2.2.0",
     "pkg": "^4.4.0",
     "ts-node": "^8.3.0",
     "typescript": "^3.5.3"
