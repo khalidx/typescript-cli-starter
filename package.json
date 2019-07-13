@@ -12,7 +12,7 @@
   "main": "./dist/index.js",
   "bin": "./dist/cli.js",
   "scripts": {
-    "dev": "ts-node ./src/index.ts",
+    "dev": "ts-node ./src/cli.ts",
     "build": "tsc",
     "bundle": "npm run build && pkg . --out-dir ./exec/"
   },
