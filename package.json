@@ -17,7 +17,9 @@
     "bundle": "npm run build && pkg . --out-dir ./exec/"
   },
   "devDependencies": {
-    "pkg": "^4.3.8",
-    "typescript": "^3.4.5"
-  }
+    "pkg": "^4.4.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {}
 }
