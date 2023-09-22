@@ -1,9 +1,11 @@
 #!/usr/bin/env node
 
-import program from 'commander'
+import { Command } from 'commander'
 
 import { orderPizza } from './index'
- 
+
+const program = new Command()
+
 program
   .version('0.1.0')
   .option('-p, --peppers', 'Add peppers')
@@ -12,9 +14,11 @@ program
   .option('-c, --cheese [type]', 'Add the specified type of cheese [marble]', 'marble')
   .parse(process.argv)
 
+let opts = program.opts() as any
+
 orderPizza({
-  peppers: program.peppers,
-  pineapple: program.pineapple,
-  bbqSauce: program.bbqSauce,
-  cheeseType: program.cheese
+  peppers: opts.peppers,
+  pineapple: opts.pineapple,
+  bbqSauce: opts.bbqSauce,
+  cheeseType: opts.cheese
 }).then(result => console.log(result.message))
