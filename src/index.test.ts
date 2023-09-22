@@ -8,6 +8,8 @@ test.before(async t => {
 
 test('can order a pizza', async t => {
 
+  // example:
+  // > my-library -c swiss
   let result = await orderPizza({
     peppers: false,
     pineapple: false,

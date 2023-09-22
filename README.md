@@ -21,6 +21,18 @@ Your application will be installable from `npm` or by sharing your native execut
 
 ## Usage
 
+### Adjust the name of your library
+
+Change the "my-library" string in the package.json
+`"bin": {
+    "my-library": "..."
+  }`
+
+### Generate, install (globally) and run
+`npm i`
+
+`npm run generate`
+
 ### **dev**
 
 `npm run dev`

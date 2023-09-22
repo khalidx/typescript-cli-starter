@@ -5,7 +5,7 @@ export interface Toppings {
   cheeseType: string
 }
 
-export async function orderPizza (toppings: Toppings): Promise<{ message: string}> {
+export async function orderPizza(toppings: Toppings): Promise<{ message: string }> {
   let message = 'you ordered a pizza with:\n'
   if (toppings.peppers) message += '  - peppers\n'
   if (toppings.pineapple) message += '  - pineapple\n'
